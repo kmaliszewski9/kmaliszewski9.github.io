@@ -6,10 +6,8 @@ categories: scala
 ---
 
 Is this clickbait? Not really. <br>
-Is this the fault of the language or the compiler? Definitely not.
+Is this the fault of the language or the compiler? Definitely not. <br>
 Rather, it was part of a rushed migration. Sharing the lessons learned in the process.
-
----
 
 I was refreshing one of our services. Part of this process was to migrate codebase from Scala 2.13 to Scala 3. I’ve done this a few times before and overall had a positive experience. Well, at least until we talk about projects with macro wizardry.
 
