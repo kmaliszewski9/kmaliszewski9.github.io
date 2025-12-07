@@ -5,7 +5,7 @@ date: 2025-12-07 14:10:37 +0100
 categories: scala
 ---
 
-Is this clickbait? Not really.
+Is this clickbait? Not really. <br>
 Is this the fault of the language or the compiler? Definitely not.
 Rather, it was part of a rushed migration. Sharing the lessons learned in the process.
 
