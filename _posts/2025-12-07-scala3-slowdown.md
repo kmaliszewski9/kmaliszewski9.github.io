@@ -43,9 +43,9 @@ This made me pull out the big guns. I profiled the service using [async-profiler
 
 CPU profile looked vastly different on Scala 3 than on 2.13.
 
-![scala2_13_flamegraph]({{ BASE_PATH }}/assets/s213.png)
+![scala2_13_flamegraph]({{ BASE_PATH }}/assets/s213low.png)
 
-![scala3_flamegraph]({{ BASE_PATH }}/assets/s3.png)
+![scala3_flamegraph]({{ BASE_PATH }}/assets/s3low.png)
 
 JVM-level CPU time was now dominated by JIT compiler while application-level by decoding.
 
@@ -55,7 +55,7 @@ Looking at the top of Scala 3 flamegraph I noticed a long quicklens call.
 
 What used to be transparent (frankly, I didn’t even realize we used the library), now took almost half of the total CPU time. I compared how it looks on Scala 2.13 and it was barely noticeable with around 0.5% samples. 
 
-Turns out there was indeed a subtle bug https://github.com/softwaremill/quicklens/pull/115 making chained evaluations inefficient in Scala 3. This also explained why the JVM spent so much time compiling. 
+Turns out there was indeed [a subtle bug](https://github.com/softwaremill/quicklens/pull/115) making chained evaluations inefficient in Scala 3. This also explained why the JVM spent so much time compiling. 
 
 After upgrading the library, performance and CPU characteristics on Scala 3 became indistinguishable from Scala 2.13.
 
