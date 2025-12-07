@@ -43,9 +43,13 @@ This made me pull out the big guns. I profiled the service using [async-profiler
 
 CPU profile looked vastly different on Scala 3 than on 2.13.
 
+{:refdef: style="text-align: center;"}
 ![scala2_13_flamegraph]({{ BASE_PATH }}/assets/s213low.png)
+{: refdef}
 
+{:refdef: style="text-align: center;"}
 ![scala3_flamegraph]({{ BASE_PATH }}/assets/s3low.png)
+{: refdef}
 
 JVM-level CPU time was now dominated by JIT compiler while application-level by decoding.
 
