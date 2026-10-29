@@ -12,3 +12,4 @@ Feel free to reach me via:
 
 - **Email**: [krzysztof.maliszewski07 at gmail.com](mailto:krzysztof.maliszewski07@gmail.com)
 - **LinkedIn**: [mrzysztof](https://www.linkedin.com/in/mrzysztof/)
+- **X**: [@kmaliszewski9](https://x.com/kmaliszewski9)
