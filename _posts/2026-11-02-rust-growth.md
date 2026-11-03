@@ -4,19 +4,19 @@ title: "Rust is the fastest-growing major language"
 date: 2026-11-02 12:00:00 +0100
 categories: rust
 ---
-Rust is growing fast. In fact, it is the fastest-growing major language. <br>
-The number of accounts pushing code to Rust projects [grew 162%](https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/) from Sep 2025 to Sep 2026. For comparison, [in 2022](https://github.blog/news-insights/research/octoverse-2022-10-years-of-tracking-open-source/) that growth was about 50%. <br>
-In 2026 Rust [entered the top 10](https://www.infoworld.com/article/4193406/rust-language-rises-to-top-10-in-tiobe-popularity-index.html) of the [TIOBE index](https://www.tiobe.com/tiobe-index/), surpassing Go.
+The number of accounts pushing code to Rust projects [grew 162%](https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/) from Sep 2025 to Sep 2026. By this measure, it is the fastest-growing major language.
 
 ![ai_prs_by_language]({{ BASE_PATH }}/assets/rust-growth/ai-prs-by-language.png)
 
+For comparison, [in 2022](https://github.blog/news-insights/research/octoverse-2022-10-years-of-tracking-open-source/) that growth was about 50%.
+
+Also, this year Rust [entered the top 10](https://www.infoworld.com/article/4193406/rust-language-rises-to-top-10-in-tiobe-popularity-index.html) of the [TIOBE index](https://www.tiobe.com/tiobe-index/), surpassing Go.
+
 Sure, memory-safety pressure, Linux adoption and big-tech backing already gave Rust steady growth, but 2026 is its strongest year so far. The year, the industry stopped writing code by hand.
 
-That makes sense. Agents flip Rust's old tradeoff. Its safety and performance came at the cost of lower productivity and a steep learning curve. When a machine does the writing, these costs are mostly gone. 
+That makes sense. Agents flip Rust's old tradeoff. Its safety and performance came at the cost of lower productivity and a steep learning curve. When a machine does the writing, these costs are mostly gone. Also, arguably it is a pretty well suited language for agents. 
 
-Also, arguably it is a pretty well suited language for agents. The compiler is a tight feedback loop.
-
-So, what does it mean?
+What does it mean?
 
 If CI/CD is already painful, Rust compilation will push it even harder. A build of a mid-sized workspace takes minutes. Caching `target/` in CI is a project of its own. Rust is (in)famous for its insane build times and output sizes.
 
