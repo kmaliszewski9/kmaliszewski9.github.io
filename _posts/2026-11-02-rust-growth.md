@@ -20,7 +20,9 @@ What does it mean?
 
 If CI/CD is already painful, Rust compilation will push it even harder. A build of a mid-sized workspace takes minutes. Caching `target/` in CI is a project of its own. Rust is (in)famous for its insane build times and output sizes.
 
-Many teams will own Rust they can't really read or debug. I know, reading the code is going out of fashion, but the compiler still cannot verify intent. At least for now. This can hurt with all the ongoing rewrites. 
+With all the ongoing rewrites, some edge cases are probably still waiting to be discovered. Remember Cloudflare's [outage](https://blog.cloudflare.com/18-november-2025-outage/) last year? Innocent `unwrap()` in their new Rust proxy took a large part of the internet down for hours. Ubuntu’s rewrite of coreutils shipped a `date -r` [bug](https://www.omgubuntu.co.uk/2025/10/ubuntu-25-10-rust-coreutils-date-bug) that quietly stopped automatic security updates on 25.10. 
+
+Many teams will own Rust they can't really read or debug. I know, reading the code is going out of fashion, but the compiler still cannot verify intent. At least for now. 
 
 On the bright side, it could also mean that we will have more secure and performant software. At Google, memory-safety bugs [fell from 76% of Android vulnerabilities in 2019 to under 20% in 2025](https://blog.google/security/rust-in-android-move-fast-fix-things/). Rust code there shows about 1000x lower memory-safety vulnerability density than C and C++.
 
