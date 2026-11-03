@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rust is the fastest-growing major language"
+title: "Rust's supergrowth"
 date: 2026-11-02 12:00:00 +0100
 categories: rust
 ---
