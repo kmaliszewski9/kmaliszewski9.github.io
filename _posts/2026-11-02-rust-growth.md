@@ -18,7 +18,7 @@ That makes sense. Agents flip Rust's old tradeoff. Its safety and performance ca
 
 What does it mean?
 
-If CI/CD is already painful, Rust compilation will push it even harder. A build of a mid-sized workspace takes minutes. Caching `target/` in CI is a project of its own. Rust is (in)famous for its insane build times and output sizes.
+If CI/CD is already painful, Rust compilation will push it even harder. A build of a mid-sized workspace takes minutes and caching `target/` in CI is a project of its own. Rust is (in)famous for its insane build times and output sizes.
 
 With all the ongoing rewrites, some edge cases are probably still waiting to be discovered. Remember Cloudflare's [outage](https://blog.cloudflare.com/18-november-2025-outage/) last year? An innocent-looking `unwrap()` in their new Rust proxy took a large part of the internet down for hours. Ubuntu’s rewrite of coreutils shipped a `date -r` [bug](https://www.omgubuntu.co.uk/2025/10/ubuntu-25-10-rust-coreutils-date-bug) that quietly stopped automatic security updates on 25.10. 
 
@@ -28,4 +28,4 @@ On the bright side, it could also mean that we will have more secure and perform
 
 It's the outcome I want to believe in, at a time when critical vulnerabilities land almost daily.
 
-We may be shifting from languages designed for humans to write toward languages designed for humans to verify, and Rust is simply the first to benefit.
+I sense we may be shifting from languages designed for humans to write toward languages designed for humans to verify, and Rust is the first to benefit.
